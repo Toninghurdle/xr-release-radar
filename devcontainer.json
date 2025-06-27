@@ -1,0 +1,23 @@
+// Android + Meta Spatial SDK Dev Container for GitHub Codespaces
+{
+  "name": "Android Spatial SDK Dev",
+  "image": "mcr.microsoft.com/devcontainers/android:latest",
+  "features": {
+    "ghcr.io/devcontainers/features/android-sdk:1": {
+      "version": "34",
+      "build-tools-version": "34.0.0",
+      "ndk": true,
+      "emulator": false
+    }
+  },
+  "postCreateCommand": "git clone https://github.com/oculus-samples/SpatialSDKExamples.git || true",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "ms-androidtools.vscode-android",
+        "redhat.java"
+      ]
+    }
+  }
+}
